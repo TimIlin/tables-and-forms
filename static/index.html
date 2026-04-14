@@ -21,28 +21,26 @@
         </label>
 
         <label>
-            <input type="radio" name="gender" value="male"> Мужчина
+            <input type="radio" name="gender" value="boy"> Мужчина
         </label>
 
         <label>
-            <input type="radio" name="gender" value="female"> Женщина
+            <input type="radio" name="gender" value="girl"> Женщина
         </label>
 
         <label>
-            <input type="radio" name="gender" value="unknown"> Не определился
+            <input type="radio" name="gender" value="none"> Не определился
         </label><br>
 
         <label>
-            <select name="eyeColor">
-                <option value="blue">Голубые</option>
-                <option value="green">Зеленые</option>
-                <option value="yellow">Желтые</option>
-            </select><br>
+            Выбирете цвет глаз:
+            <input type="color" name="eyeColor">
+            <br>
         </label>
 
         <label>
             Укажите длину хвоста:
-            <input type="number" name="tailLength" min="1" max="100">
+            <input type="number" name="tailLength" min="7" max="120">
             см<br>
         </label>
 
@@ -51,6 +49,31 @@
             <input type="text" name="name"><br>
         </label>
 
+        <label>
+            Email:
+            <input type="email" name="email" placeholder="example@mail.com" required>
+        </label>
+        <br><br>
+
+        <label>
+            Дата рождения:
+            <input type="date" name ="dateOfBirth" value="2023-01-01" required>
+        </label>
+        <br><br>
+
+        <label>
+            Номер телефона:
+            <input type="tel" name ="phone" placeholder="+7 (999) 123-45-67" required>
+        </label>
+        <br><br>
+
+        <label>
+            <input type="checkbox" value="true" name ="rules" required>
+            Я согласен с правилами платформы
+        </label>
+        <br><br>
+
+        <input type="reset" value="Сбросить все значения">
         <button type="submit">Отправить заявку</button>
     </form>
 
