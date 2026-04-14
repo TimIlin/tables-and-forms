@@ -9,8 +9,47 @@
 <main>
     <h1>Найди себе друга!</h1>
 
-     
+    <!-- petType gender eyeColor tailLength name -->
+
     <form action="/pets/orders" method="POST">
+        <label>
+            <select name="petType">
+                <option value="dog">Собака</option>
+                <option value="cat">Кошка</option>
+                <option value="parrot">Попугай</option>
+            </select><br>
+        </label>
+
+        <label>
+            <input type="radio" name="gender" value="male"> Мужчина
+        </label>
+
+        <label>
+            <input type="radio" name="gender" value="female"> Женщина
+        </label>
+
+        <label>
+            <input type="radio" name="gender" value="unknown"> Не определился
+        </label><br>
+
+        <label>
+            <select name="eyeColor">
+                <option value="blue">Голубые</option>
+                <option value="green">Зеленые</option>
+                <option value="yellow">Желтые</option>
+            </select><br>
+        </label>
+
+        <label>
+            Укажите длину хвоста:
+            <input type="number" name="tailLength" min="1" max="100">
+            см<br>
+        </label>
+
+        <label>
+            Введите имя:
+            <input type="text" name="name"><br>
+        </label>
 
         <button type="submit">Отправить заявку</button>
     </form>
